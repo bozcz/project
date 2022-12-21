@@ -1,0 +1,413 @@
+/*=============================================
+=            CSS Reset            =
+=============================================*/
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  /* border: 1px solid red; */
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background: #e7e0e9;
+  color: #211925;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/*=============================================
+  =            Main page CSS            =
+  =============================================*/
+body {
+  background: #aaa;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color: #00c9b5;
+  position: relative;
+  text-decoration: none;
+  z-index: 999;
+  padding: 0.5rem;
+}
+
+a::before {
+  background: #ce7886;
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease-in-out;
+  z-index: -1;
+}
+
+a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+a:hover {
+  color: #55414a;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #3179a0;
+}
+/*----------  Nav bar ----------*/
+
+nav {
+  width: 100%;
+  display: flex;
+  background: #55414a;
+  align-items: center;
+  color: #e7e0e9;
+  flex-flow: column;
+  place-content: center center;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.navmenu {
+  list-style: none;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 0;
+  gap: 0.5rem;
+}
+
+/*----------  Header slider  ----------*/
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*----------  Main section  ----------*/
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem 2rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  justify-items: center;
+}
+
+main .item {
+  display: flex;
+  flex-flow: column;
+  place-content: center flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.item i {
+  color: #f8a090;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.description {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.description iframe {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
+/*----------  Footer  ----------*/
+
+footer {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  background: #55414a;
+  color: #e7e0e9;
+  align-items: center;
+  flex-flow: column;
+  place-content: center center;
+  gap: 1rem;
+  padding: 2rem 1rem;
+}
+
+footer hr {
+  width: 80%;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(249, 248, 113, 0),
+    rgba(249, 248, 113, 0.75),
+    rgba(249, 248, 113, 0)
+  );
+}
+
+/*=============================================
+=            Contact page            =
+=============================================*/
+
+.form {
+  background-color: #fff6ff;
+  display: flex;
+  place-content: center center;
+  padding: 1.5rem;
+  border-radius: 20%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: fit-content;
+}
+
+.form-item {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 0;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+textarea {
+  border: none;
+  font-size: 0.8rem;
+  background-color: #9baebc;
+  padding: 0.5rem;
+  color: #384955;
+  width: 50%;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: #3179a0;
+}
+
+#submit-btn {
+  background: linear-gradient(to bottom, #00b8b3 5%, #0099b4 100%);
+  background-color: #00b8b3;
+  border-radius: 28px;
+  display: inline-block;
+  cursor: pointer;
+  color: #cdf6ff;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  border: none;
+  text-shadow: 0px 1px 0px #3179a0;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+#submit-btn:hover {
+  background: linear-gradient(to bottom, #0099b4 5%, #00b8b3 100%);
+  background-color: #0099b4;
+}
+#submit-btn:active {
+  position: relative;
+  top: 1px;
+}
+
+/*=====  End of Contact page  ======*/
+
+/*----------  Responsive layout  ----------*/
+
+@media screen and (min-width: 700px) {
+  nav {
+    flex-flow: row wrap;
+    place-content: center space-between;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .navmenu {
+    flex-flow: row wrap;
+    gap: 1rem;
+  }
+  header {
+    justify-content: flex-start;
+    padding-left: 3rem;
+    text-align: left;
+  }
+  header h1 {
+    font-size: 2em;
+  }
+  header p {
+    font-size: 1em;
+  }
+  main.index {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 90%;
+    row-gap: 3rem;
+  }
+  .description {
+    grid-column: 1 / 4;
+    flex-flow: row;
+    gap: 1rem;
+    text-align: left;
+    align-items: flex-start;
+    max-width: 80%;
+  }
+
+  .form {
+    width: max-content;
+  }
+
+  .contact-text {
+    text-align: left;
+    padding-top: 10%;
+  }
+
+  main.contact {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+
+    padding-left: 20%;
+  }
+}

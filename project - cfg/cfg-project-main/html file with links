@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/a4c322cc10.js"
+      crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+   
+<div class="slider">
+  <div class="slider__slide slider__slide--active" data-slide="1">
+    <div class="slider__wrap">
+      <div class="slider__back"></div>
+    </div>
+    <div class="slider__inner">
+      <div class="slider__content">
+        <h1>Slide <br> One</h1><a class="go-to-next">next</a>
+      </div>
+    </div>
+  </div>
+  <div class="slider__slide" data-slide="2">
+    <div class="slider__wrap">
+      <div class="slider__back"></div>
+    </div>
+    <div class="slider__inner">
+      <div class="slider__content">
+        <h1>Slide <br> Two</h1><a class="go-to-next">next</a>
+      </div>
+    </div>
+  </div>
+  <div class="slider__slide" data-slide="3">
+    <div class="slider__wrap">
+      <div class="slider__back"></div>
+    </div>
+    <div class="slider__inner">
+      <div class="slider__content">
+        <h1>Slide <br> Three</h1><a class="go-to-next">next</a>
+      </div>
+    </div>
+  </div>
+  <div class="slider__indicators"></div>
+    <nav>
+      <div class="logo">
+        <i class="fa-solid fa-frog fa-4x"></i>
+      </div>
+      <ul class="navmenu">
+        <li><a href="https://www.visitnorway.com/places-to-go/northern-norway/tromso/">Visit Tromso</a></li>
+        <li><a href="https://www.dolomites.org/">Dolomites Adventure</a></li>
+        <li><a href="https://santaclausvillage.info/">Santa Clause Village</a></li>
+        <li><a href="https://github.com/zgronska/cfg-project/index2.html">Contact</a></li>
+      </ul>
+    </nav>
+    <header>
+      <div class="header-text">
+        <h1> Winter adventure in Europe</h1>
+        <p>Best Places to Visit in Europe in Winter for a Magical Vacation</p>
+      </div>
+    </header>
+    <main>
+      <div class="item one">
+        <i class="fa-solid fa-mountain fa-2x"></i>
+        <h3>For breathtaking views</h3>
+        <a href="https://www.visittromso.no/seasons/winter" target="_blank">
+          <img
+            src="https://cdn.pixabay.com/photo/2017/06/09/17/47/northern-light-2387773_960_720.jpg"
+        /></a>
+        <p>
+          Enjoy a winter adventure break in beautifully located Tromsø –
+          Norway’s “Northern Lights capital.” Experience exciting activities
+          such as Dog sledding & Aurora Safari, as well as a visit to an Aurora
+          camp.
+        </p>
+      </div>
+      <div class="item two">
+        <i class="fa-solid fa-person-skiing fa-2x"></i>
+        <h3>For winter activities</h3>
+        <a href="https://courchevel.com/en/?&" target="_blank">
+          <img
+            src="https://cdn.pixabay.com/photo/2018/11/28/17/32/ski-3844142_960_720.jpg"
+        /></a>
+        <p>
+          The winter ski resorts of Europe's Alps and Dolomites are legendary,
+          not only for their superb skiing, but for the postcard Alpine villages
+          and celebrity-studded resort towns at their bases.
+        </p>
+      </div>
+      <div class="item three">
+        <i class="fa-solid fa-sleigh fa-2x"></i>
+        <h3>For family fun</h3>
+        <a href="https://santaclausvillage.info/" target="_blank">
+<img src="https://cdn.pixabay.com/photo/2017/06/27/17/15/the-scenery-2448129_960_720.jpg"
+        /></a>
+        <p>
+          You can meet Santa Claus at the Santa Claus Village in Rovaniemi in
+          Lapland, Finland. Santa spends his time year-round at Santa Claus
+          Village. Feel the Christmas spirit!
+        </p>
+      </div>
+
+      <div class="description">
+        <div class="text">
+          <h2>There's more to discover</h2>
+          <p>
+            Excited to plan a winter vacation full of joy, adventure and endless
+            magic? From skiing the Swiss Alps to exploring the wilderness of the
+            Arctic Circle, winter is such a special time of year! Where is your
+            winter destination?
+          </p>
+        </div>
+        <iframe
+          src="https://www.youtube.com/embed/ITkPBnsPyXY"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </main>
+    <footer>
+      <p>
+        Created by Bożena Czerwonka, Sicelo Sibanda, Zuza Grońska for the
+        <a href="https://codefirstgirls.com/">Code First Girls</a> Web Dev
+        course project
+      </p>
+      <hr />
+      <p>© All rights reserved 2022</p>
+    </footer>
+  </body>
+</html>
